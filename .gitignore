@@ -1,5 +1,22 @@
+# EXCLUDE -------------------------------------------------------------------
+# Gradle
+.gradle
+build
+
+# IntelliJ
+.idea
+
+# Node
+node_modules/*
+
+# Java
 *.class
+*.jar
+hs_err_pid*
+
+# Logs
 *.log
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# EXCEPT --------------------------------------------------------------------
+# Gradle
+!gradle-wrapper.jar
