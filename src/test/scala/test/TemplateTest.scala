@@ -6,7 +6,7 @@ class TemplateTest extends AbstractTest:
 
   describe("A value") {
     describe("when positive") {
-      it ("should be greater than 0") {
+      it("should be greater than 0") {
         positiveValue should be > 0
       }
     }
