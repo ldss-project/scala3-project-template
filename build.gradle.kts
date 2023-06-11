@@ -2,6 +2,7 @@ plugins {
     scala
     application
     alias(libs.plugins.spotless)
+    alias(libs.plugins.wartremover)
 }
 
 repositories { mavenCentral() }

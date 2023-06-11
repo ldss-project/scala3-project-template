@@ -2,6 +2,9 @@ package test
 
 /** Template test. */
 class TemplateTest extends AbstractTest:
+
+  before {}
+
   private val positiveValue = 1
 
   describe("A value") {
@@ -11,3 +14,5 @@ class TemplateTest extends AbstractTest:
       }
     }
   }
+
+  after {}
