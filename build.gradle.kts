@@ -22,6 +22,7 @@ private class ProjectInfo { // TODO change project info
 // ### Build Configuration #############################################################################################
 plugins {
     with(libs.plugins){
+        `java-library`
         scala
         application
         alias(spotless)
