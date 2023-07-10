@@ -1,24 +1,24 @@
 // ### Project Information #############################################################################################
 private class ProjectInfo { // TODO change project info
-    companion object {
-        const val longName: String = "Scala 3 Project Template"
-        const val description: String = "A template for configuring Scala 3 projects."
+    val longName: String = "Scala 3 Project Template"
+    val description: String = "A template for configuring Scala 3 projects."
 
-        const val repositoryOwner: String = "jahrim"
-        const val repositoryName: String = "scala3-project-template"
+    val repositoryOwner: String = "jahrim"
+    val repositoryName: String = "scala3-project-template"
 
-        const val artifactGroup: String = "io.github.jahrim"
-        const val artifactId: String = "scala3-project-template"
-        const val implementationClass: String = "main.MainClass"
+    val artifactGroup: String = "io.github.jahrim"
+    val artifactId: String = project.name
+    val implementationClass: String = "main.MainClass"
 
-        const val license = "The MIT License"
-        const val licenseUrl = "https://opensource.org/licenses/MIT"
+    val license = "The MIT License"
+    val licenseUrl = "https://opensource.org/licenses/MIT"
 
-        val website = "https://github.com/$repositoryOwner/$repositoryName"
-        val tags = listOf("scala3", "project template")
-    }
+    val website = "https://github.com/$repositoryOwner/$repositoryName"
+    val tags = listOf("scala3", "project template")
 }
+private val projectInfo: ProjectInfo = ProjectInfo()
 
+println(projectInfo.artifactId)
 // ### Build Configuration #############################################################################################
 plugins {
     with(libs.plugins){
@@ -42,7 +42,7 @@ dependencies {
 }
 
 application {
-    mainClass.set(ProjectInfo.implementationClass)
+    mainClass.set(projectInfo.implementationClass)
 }
 
 spotless {
@@ -52,7 +52,7 @@ spotless {
 }
 
 // ### Publishing ######################################################################################################
-group = ProjectInfo.artifactGroup
+group = projectInfo.artifactGroup
 gitSemVer {
     buildMetadataSeparator.set("-")
     assignGitSemanticVersion()
@@ -65,12 +65,12 @@ tasks.javadocJar {
 
 publishOnCentral {
     configureMavenCentral.set(true)
-    projectDescription.set(ProjectInfo.description)
-    projectLongName.set(ProjectInfo.longName)
-    licenseName.set(ProjectInfo.license)
-    licenseUrl.set(ProjectInfo.licenseUrl)
-    repoOwner.set(ProjectInfo.repositoryOwner)
-    projectUrl.set(ProjectInfo.website)
+    projectDescription.set(projectInfo.description)
+    projectLongName.set(projectInfo.longName)
+    licenseName.set(projectInfo.license)
+    licenseUrl.set(projectInfo.licenseUrl)
+    repoOwner.set(projectInfo.repositoryOwner)
+    projectUrl.set(projectInfo.website)
     scmConnection.set("scm:git:$projectUrl")
 }
 
