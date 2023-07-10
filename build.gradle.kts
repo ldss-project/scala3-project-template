@@ -18,7 +18,6 @@ private class ProjectInfo { // TODO change project info
 }
 private val projectInfo: ProjectInfo = ProjectInfo()
 
-println(projectInfo.artifactId)
 // ### Build Configuration #############################################################################################
 plugins {
     with(libs.plugins){
