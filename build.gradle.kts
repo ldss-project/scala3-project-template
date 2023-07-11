@@ -8,7 +8,7 @@ private class ProjectInfo { // TODO change project info
 
     val artifactGroup: String = "io.github.jahrim"
     val artifactId: String = project.name
-    val implementationClass: String = "main.MainClass"
+    val implementationClass: String = "main.main"
 
     val license = "The MIT License"
     val licenseUrl = "https://opensource.org/licenses/MIT"
