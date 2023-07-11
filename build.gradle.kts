@@ -36,12 +36,14 @@ repositories { mavenCentral() }
 dependencies {
     compileOnly(libs.bundles.scalafmt)
     implementation(libs.scala)
+    implementation(libs.scallop)
     testImplementation(libs.scalatest)
     testImplementation(libs.scalatestplusjunit)
 }
 
 application {
     mainClass.set(projectInfo.implementationClass)
+    tasks.withType(JavaExec::class.java){ args() }
 }
 
 spotless {
