@@ -48,11 +48,8 @@ jobs:
         run: |
           chmod 777 ./gradlew
           ./gradlew build
-      # Publish artifacts on GitHub and Docker
-      - name: Publish on GitHub and Docker
+      # Publish artifacts on Maven, GitHub and Docker
+      - name: Publish on Maven, GitHub and Docker
         run: |
           npm clean-install
           npx semantic-release
-      # Publish artifacts on Maven
-      - name: Publish on Maven
-        run: ./gradlew publish --no-parallel
