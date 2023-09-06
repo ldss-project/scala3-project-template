@@ -3,7 +3,7 @@ private class ProjectInfo { // TODO change project info
     val longName: String = "Scala 3 Project Template"
     val description: String = "A template for configuring Scala 3 projects."
 
-    val repositoryOwner: String = "jahrim"
+    val repositoryOwner: String = "ldss-project"
     val repositoryName: String = "scala3-project-template"
 
     val artifactGroup: String = "io.github.jahrim"
