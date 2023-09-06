@@ -18,3 +18,6 @@ This repository is a template for a Scala3 project, which includes code styling
 
 The project starts with preconfigured continuous integration for testing and 
 deployment of **sources** and **documentation** on both GitHub and Maven Central.
+
+In the case of **executable** artifacts, a configuration for publishing a Docker
+image is also provided.
