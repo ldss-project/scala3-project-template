@@ -1,10 +1,11 @@
 [TODO: change title]: #
 # Scala 3 Project Template
 
-[TODO: replace :owner, :repo, :group, :artifact in the following links]: #
+[TODO: replace :docker-owner, :owner, :repo, :group, :artifact in the following links]: #
 <!--
 [![GitHub Release](https://img.shields.io/github/v/tag/:owner/:repo?label=Github&color=blue)](https://github.com/:owner/:repo/releases)
-[![Maven Central](https://img.shields.io/maven-central/v/:group/:artifact?label=Maven%20Central&color=blue)](https://central.sonatype.com/artifact/:group/:artifact)
+[![Maven Central Release](https://img.shields.io/maven-central/v/:group/:artifact?label=Maven%20Central&color=blue)](https://central.sonatype.com/artifact/:group/:artifact)
+[![Docker Release](https://img.shields.io/docker/v/:docker-owner/:group.:artifact?label=Docker&color=blue)](https://hub.docker.com/r/:docker-owner/:group.:artifact)
 [![Test](https://github.com/:owner/:repo/actions/workflows/continuous-testing.yml/badge.svg)](https://github.com/:owner/:repo/actions/workflows/continuous-testing.yml)
 [![Deployment](https://github.com/:owner/:repo/actions/workflows/continuous-deployment.yml/badge.svg)](https://github.com/:owner/:repo/actions/workflows/continuous-deployment.yml)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2F:owner%2F:repo.svg)](https://fossa.com/)
